@@ -10,7 +10,7 @@
 - name: Removendo o cluster
   command:
     kubeadm reset --force
-  register: kubeadm-reset
+  register: remove_cluster
 
 - name: Adicionando o worker ao cluster k8s
   shell:
